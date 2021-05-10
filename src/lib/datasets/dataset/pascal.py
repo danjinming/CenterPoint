@@ -21,7 +21,7 @@ class PascalVOC(data.Dataset):
 
     def __init__(self, opt, split):
         super(PascalVOC, self).__init__()
-        self.data_dir = "/home/ulsee/coco/"
+        self.data_dir = "/home/huimv/coco/"
         self.img_dir = os.path.join(self.data_dir, "images/train2017")
         _ann_name = {'train': 'instances_train2017', 'val': 'instances_val2017'}
         self.annot_path = os.path.join(
